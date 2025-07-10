@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div><img class="main_logo" src="./img/icons/📝Notes.png" alt="Notes"></div>
+            <div class="row"><img class="note_icon" src="./img/icons/note.png" alt="note">
+                <div class="text">Всего заметок: <b id="count">5</b></div>
+            </div>
+
+
+        </header>
+        <div>
+            <form class="forms" name="">
+                <div class="name_note">
+                    <div class="label">Название заметки</div>
+                    <input type="text" class="input" placeholder="Напишите название новой заметки..." />
+                </div>
+
+                <div class="descr_note">
+                    <div class="descr">
+                        <div class="label">Описание новой заметки</div>
+                        <textarea type="text" class="descr__input input"
+                            placeholder="Напишите описание новой заметки..."></textarea>
+
+                    </div>
+                    <div class="choose__color">
+                        <div>
+                            <div class="label">Выберите цвет заметки</div>
+
+                            <ul>
+                                <div class="radius yellow" id="yellow">
+                                    <li></li>
+                                </div>
+                                <div class="radius green" id="green">
+                                    <li></li>
+                                </div>
+                                <div class="radius blue" id="blue">
+                                    <li></li>
+                                </div>
+
+                                <div class="radius red" id="red">
+                                    <li></li>
+                                </div>
+                                <div class="radius purple" id="purple">
+                                    <li></li>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <button type="submit" class="add-button">
+                            <div class="img_png">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M6 12H12M12 12H18M12 12V6M12 12V18" stroke="#FFF" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>Добавить заметку</div>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="content" id="cards">
+            <div class=" text text_foot">
+                <p class="text">У вас нет еще ни одной заметки</p>
+                <p class='text'>Заполните поля выше и создайте свою первую заметку!</p>
+            </div>
+
+
+
+
+            <div class="checkbox"><input class="check" type="checkbox" name="" value="">
+                <div> Показать только избранные заметки</div>
+            </div>
+
+            <div class="cards "></div>
+
+
+
+
+            <!-- 
+            <div class="card">
+                <div class="card_name yellow">
+                    <div>Flexbox (CSS)</div>
+                    <div class="card_icons">
+                        <img src="img/icons/favorite.svg" alt="favorite" class="icon" >
+                        <img src="img/icons/not favorite.svg" alt="not favorite" class="icon"  >
+                        <img src="img/icons/delete.svg" alt="delete">
+
+                        <img src="" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="card_descr"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div> -->
+
+
+
+        </div>
+
+        <div class="messages" >
+            <div class="delete" id="delete_mess" >
+                <div class="text_del">
+                    <img src="img/icons/attent.svg" alt="del">
+                    <div>Заметка удалена </div>
+                </div>
+            </div>
+
+
+
+           
+
+
+                  <div class="add" id="add_mass">
+                    <div class="text_add">
+                        <img src="img/icons/done.svg" alt="add">
+                        <div>Заметка добавлена!</div>
+                    </div>
+                  </div>
+
+
+<!-- ______________________________________маким длин -->
+
+
+                <div class="length" id="max_mass">
+                    <div class="text_del">
+                        <img src="img/icons/attent.svg" alt="del">
+                        <div>Максимальная длина заголовка - 50 символов </div>
+                    </div>
+                </div>
+
+<!-- ________________________________________пустая форма -->
+
+
+                <div class="empty " id="empty_mass">
+                    <div class="text_del">
+                        <img src="img/icons/attent.svg" alt="del">
+                        <div>Заполните форму! </div>
+                    </div>
+                </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
